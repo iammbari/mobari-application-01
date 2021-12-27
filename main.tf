@@ -1,5 +1,6 @@
 module "vpc_network" {
-    source                            = "../mobari-module-vpc"
+    #source                            = "../mobari-module-vpc"
+    source                            = "github.com/iammbari/mobari-module-vpc.git?ref=master"
     env                               = "PROD"
     ou                                = ""
     name                              = var.name
